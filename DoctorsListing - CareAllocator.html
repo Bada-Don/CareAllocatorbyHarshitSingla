@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CareAllocator - Doctors Listing</title>
+    <link rel="stylesheet" type="text/css" href="./DoctorsListing.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+
+<body>
+    <div class="header">
+        <img src="https://careallocator.000webhostapp.com/Images/CareAllocator%20Logo.png" alt="CareAllocator Logo">
+        <div class="nav">
+            <a href="/index.html">Home</a>
+            <a href="/index.html#targetSection1">About Us</a>
+            <a href="/index.html#targetSection2">Services</a>
+            <a href="/index.html#targetSection3">Contact Us</a>
+            <a href="/Patient Login-Signup.html">Login-Signup</a>
+        </div>
+    </div>
+
+    <!-- Code for search box -->
+    <div class="search-box">
+        <input type="text" placeholder="Search Doctors">
+        <button>Search</button>
+    </div>
+
+
+
+    <!-- Doctor's Listing -->
+    <div class="cards ">
+        <div class="card" style="width: 18rem;">
+            <img src="https://www.writergirl.com/wp-content/uploads/2014/11/Doctor-790X1024.jpg" class="card-img-top"
+                alt="">
+            <div class="card-body">
+                <h5 class="card-title">Dr. Anand Kumar</h5>
+                <p class="card-text">
+                    <b>Specialization:</b> Cardiologist<br>
+                    <b>Experience:</b> 5 years<br>
+                    <b>Clinic Address:</b> 123, Main Street, Ropar<br>
+                    <b>Contact:</b> +91-9876543210<br>
+                    <b>Consultation fee:-</b>Rs.500<br>
+                    <b>About Dr. Anand Kumar:</b> Dr. Anand Kumar is a highly experienced cardiologist known for his
+                    expertise
+                    in treating heart-related issues. He has successfully helped numerous patients regain their heart
+                    health through his dedicated care and treatment.
+                </p>
+                <a href="#" class="btn btn-primary">Check for Availability</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://leman-clinic.ch/wp-content/uploads/2018/11/02.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Dr. Priya Gupta</h5>
+                <p class="card-text">
+                    <b>Specialization:</b> Pediatrician<br>
+                    <b>Experience:</b> 6 years<br>
+                    <b>Clinic Address:</b> 456, Park Avenue, Ropar<br>
+                    <b>Contact:</b> +91-9871234567<br>
+                    <b>Consultation fee:-</b>Rs.600<br>
+                    <b>About Dr. Priya Gupta:</b> Dr. Priya Gupta is a compassionate pediatrician dedicated to providing
+                    the
+                    best care for children. Her expertise in child healthcare and her friendly approach make her a
+                    trusted choice for parents in Ropar.
+                </p>
+                <a href="#" class="btn btn-primary">Check for Availability</a>
+            </div>
+        </div>
+        <div class="card" style="width: 18rem;">
+            <img src="https://th.bing.com/th/id/OIP.zk6ljBq0PJHHSl6kgbrKVAHaHa?pid=ImgDet&rs=1" class="card-img-top"
+                alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Dr. Neha Sharma</h5>
+                <p class="card-text">
+                    <b>Specialization:</b> Dermatologist<br>
+                    <b>Experience:</b> 4 years<br>
+                    <b>Clinic Address:</b> 789, Oak Street, Ropar<br>
+                    <b>Contact:</b> +91-9812345678<br>
+                    <b>Consultation fee:-</b>Rs.450<br>
+                    <b>About Dr. Neha Sharma:</b> Dr. Neha Sharma is a skilled dermatologist with a passion for enhancing skin
+                    health. She offers a wide range of dermatological treatments and is committed to helping her
+                    patients achieve radiant and healthy skin.
+                </p>
+                <a href="#" class="btn btn-primary">Check for Availability</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Detailed Doctor Info -->
+    <div id="details-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeDetailsModal()">&times;</span>
+            <div class="upper">
+                <div class="text">
+
+                    <h1 class="clinic-name">Sai Clinic</h1>
+                    <h1 class="doctor-name">Sandeep Gupta</h1>
+                    <p class="specialization"><b>Specialization:</b> Cardiologist</p>
+                    <p class="phone"><b>Phone:</b> +91 76965-13958</p>
+                    <p class="address"><b>Address:</b> Shop No. 2, College Road, Ropar.</p>
+                    <p class="patient-queue"><b>Patient Queue:</b> 5 patients</p>
+                    <p class="timings"><b>Timings:</b> Mon-Fri: 9:00 AM - 5:00 PM</p>
+                    <!-- Add more details as needed -->
+                </div>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3421.208935249227!2d76.52644937412722!3d30.9646510744732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3905556b6aff00a9%3A0x36d74b441e888a8c!2sAshu%20Seat%20Cover!5e0!3m2!1sen!2sin!4v1695109962965!5m2!1sen!2sin"
+                    width="600" height="200" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <br>
+            <img class="image" src="https://internal.medicine.ufl.edu/files/2013/09/Internal-Medicine_JSJ_IMG_8144.jpg"
+                alt="Photo2">
+            <img class="image"
+                src="https://th.bing.com/th/id/R.1d7eb4f19a6935f2c284bea481e1ddca?rik=Cjy5GFAsJUgxeA&riu=http%3a%2f%2fmydecorative.com%2fwp-content%2fuploads%2f2017%2f11%2fCustom-Dental-Clinic-Design.jpg&ehk=42xyP0gilj2JFA5cfHvjuzGEo144Sf%2f%2flqXk%2bR34RLM%3d&risl=&pid=ImgRaw&r=0"
+                alt="Photo1">
+            <img class="image" src="https://www.trinityhealth.org/wp-content/uploads/2019/03/clinic.jpg" alt="Photo3">
+        </div>
+    </div>
+
+    <br><br>
+    <hr style="width:auto"><br><br>
+
+    <div class="footer">
+        &copy; 2023 CareAllocator | <a href="#">Terms of Service</a> | <a href="#">Privacy Policy</a>
+    </div>
+
+    <script src="/All pages/Doctors Listing/Doctor Listing Script.js"></script>
+</body>
+
+</html>

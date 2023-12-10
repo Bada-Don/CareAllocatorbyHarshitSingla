@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>CareAllocator - Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url('https://wallpaperaccess.com/full/136995.jpg') no-repeat center center fixed;
+            background-size: cover;
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            background-color: #0077c1;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            /* Distribute tabs evenly */
+            align-items: center;
+        }
+
+        .header img {
+            max-width: 200px;
+            /* Adjust the max-width to make the logo smaller */
+            margin-left: 10px;
+            /* Add a small margin to the left */
+        }
+
+        .header ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+        }
+
+        .header li {
+            margin-right: 20px;
+            /* Add space between tabs */
+        }
+
+        .header a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            /* Adjust the font size */
+            transition: color 0.3s, background-color 0.3s;
+            /* Add hover transition */
+        }
+
+        .header a:hover {
+            color: #0077c1;
+            /* Change text color on hover */
+            background-color: white;
+            /* Change background color on hover */
+        }
+
+        .container {
+            max-width: 400px;
+            margin: 50px auto;
+            /* Center the container both horizontally and vertically */
+            background: rgba(255, 255, 255, 0.8);
+            /* Added background opacity */
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .container h2 {
+            text-align: center;
+            color: #0077c1;
+        }
+
+        .container input[type="text"],
+        .container input[type="password"],
+        .container input[type="date"],
+        .container input[type="email"],
+        .container input[type="tel"],
+        .container textarea,
+        .container select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            /* Adjusted margin to create space between inputs */
+            border: 1px solid #ccc;
+            border-radius: 3px;
+            box-sizing: border-box;
+            /* Ensure consistent box-sizing */
+        }
+
+        .container button {
+            background-color: #0077c1;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+            width: 100%;
+        }
+
+        .container p {
+            text-align: center;
+            font-size: 14px;
+            margin-top: 15px;
+        }
+
+        .container a {
+            color: #0077c1;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <img src="https://careallocator.000webhostapp.com/Images/CareAllocator%20Logo.png" alt="CareAllocator Logo">
+        <ul>
+            <li><a href="/index.html">Home</a></li>
+            <li><a href="/index.html#targetSection1">About Us</a></li>
+            <li><a href="/index.html#targetSection3">Contact Us</a></li>
+            <li><a href="Login or Signup for Doctor-CareAllocator.html">Get Started</a></li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Sign Up</h2>
+        <h3>Personal details</h3>
+        <form>
+            <input type="text" placeholder="First Name">
+            <input type="text" placeholder="Last Name">
+            <input type="date">
+
+            <fieldset>
+                <legend>Gender:</legend>
+                <input type="radio" name="gender" value="Male">Male
+                <input type="radio" name="gender" value="Female">Female
+            </fieldset>
+
+            <select>
+                <option>+91 (India)</option>
+                <option>+1 (USA)</option>
+                <!-- Add more options as needed -->
+            </select>
+            <input type="tel" placeholder="Mobile Number">
+            <input type="email" placeholder="Email Address">
+            <textarea placeholder="Address"></textarea>
+
+            <h3>Professional Information</h3>
+            <input type="text" placeholder="Medical License Number">
+            <input type="text" placeholder="Medical Specialty or Specializations">
+            <input type="text" placeholder="Medical School Attended">
+
+            <form action="upload.php" method="post" enctype="multipart/form-data">
+                <label for="certificate">Upload Medical Certificate:</label>
+                <input type="file" name="certificate" id="certificate" accept=".pdf, .doc, .docx">
+            </form>
+            <br>
+
+            <h3>Practice Information</h3>
+            <input type="text" placeholder="Clinic/Hospital Name">
+            <input type="text" placeholder="Clinic/Hospital Address">
+            <input type="text" placeholder="Clinic/Hospital Contact Number">
+            <form action="#">
+                <fieldset>
+                    <legend>Select Availability Hours:</legend>
+                    <label for="start-time">Start Time:</label>
+                    <input type="time" id="start-time" name="start-time">
+                    <br><br>
+                    <label for="end-time">End Time:.</label>
+                    <input type="time" id="end-time" name="end-time">
+                </fieldset>
+            </form>
+            <br>
+            <form action="#">
+                <fieldset>
+                    <legend>Select Lunch Time:</legend>
+                    <label for="start-lunch">Start Time:</label>
+                    <input type="time" id="start-lunch" name="start-lunch">
+                    <br><br>
+                    <label for="end-lunch">End Time:.</label>
+                    <input type="time" id="end-lunch" name="end-lunch">
+                </fieldset>
+            </form>
+            <br>
+            <label for="experience">Years of Experience:</label>
+            <input style="width: 30px;" type="number" id="experience" name="experience" required>
+            <span>years</span>
+            <br>
+            <br>
+            <h3>Consent and Agreement</h3>
+            <input type="checkbox" id="termsAndConditions" name="termsAndConditions" required>
+            <label for="termsAndConditions">I accept the Terms and Conditions</label><br>
+
+            <input type="checkbox" id="privacyPolicy" name="privacyPolicy" required>
+            <label for="privacyPolicy">I accept the Privacy Policy</label><br>
+            <p>Click here to read <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy Agreement</a></p>
+            <br>
+            <br>
+            <button>Sign Up</button>
+        </form>
+        <p>Already have an account? <a href="Login Page CareAllocator - Doctor.html">Log In</a></p>
+    </div>
+</body>
+
+</html>
