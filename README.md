@@ -22,3 +22,8 @@ treatment.
 *******************************************************************************
 Currently, this is a multipage website but whenever the admin (me) masters the MERN, he will make this better.
 *******************************************************************************
+
+**A few screenshots:**
+![Home Page](image.png)
+![Login-Signup](image-2.png)
+![Listings](image-1.png)
